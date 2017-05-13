@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>h5-3 | Miss Lai &#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="h5-表单 表单input标签新输入类型  左面看得到效果的 颜色  type=”color”   日期  type=”date” 滑块  type=”range”   移动端弹出不同的键盘的 数字  type=”number” 手机 type=”tel” 邮箱 type=”email” 搜索框  type=”search”对比之前css表订单类型，这个会更加的完善，提高用户体验度。新表单事件">
+<meta name="keywords" content="h5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="h5-3">
+<meta property="og:url" content="http://yoursite.com/2017/04/27/h5-3/index.html">
+<meta property="og:site_name" content="Miss Lai 's blog">
+<meta property="og:description" content="h5-表单 表单input标签新输入类型  左面看得到效果的 颜色  type=”color”   日期  type=”date” 滑块  type=”range”   移动端弹出不同的键盘的 数字  type=”number” 手机 type=”tel” 邮箱 type=”email” 搜索框  type=”search”对比之前css表订单类型，这个会更加的完善，提高用户体验度。新表单事件">
+<meta property="og:updated_time" content="2017-04-27T11:26:33.375Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="h5-3">
+<meta name="twitter:description" content="h5-表单 表单input标签新输入类型  左面看得到效果的 颜色  type=”color”   日期  type=”date” 滑块  type=”range”   移动端弹出不同的键盘的 数字  type=”number” 手机 type=”tel” 邮箱 type=”email” 搜索框  type=”search”对比之前css表订单类型，这个会更加的完善，提高用户体验度。新表单事件">
+  
+    <link rel="alternative" href="/atom.xml" title="Miss Lai &#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/123.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Miss Lai</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/little-love" title="github">github</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Begin/" style="font-size: 10px;">Begin</a> <a href="/tags/C3/" style="font-size: 15px;">C3</a> <a href="/tags/H5/" style="font-size: 10px;">H5</a> <a href="/tags/h5/" style="font-size: 20px;">h5</a> <a href="/tags/html/" style="font-size: 10px;">html</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Miss Lai</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/123.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Miss Lai</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="github" target="_blank" href="https://github.com/little-love" title="github">github</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-h5-3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/27/h5-3/" class="article-date">
+      <time datetime="2017-04-27T13:09:32.000Z" itemprop="datePublished">2017-04-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      h5-3
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/h5/">h5</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="h5-表单"><a href="#h5-表单" class="headerlink" title="h5-表单"></a>h5-表单</h2><blockquote>
+<p>表单<br>input标签新输入类型</p>
+<ul>
+<li>左面看得到效果的<ul>
+<li>颜色  type=”color”  </li>
+<li>日期  type=”date”</li>
+<li>滑块  type=”range”</li>
+</ul>
+</li>
+<li>移动端弹出不同的键盘的<ul>
+<li>数字  type=”number”</li>
+<li>手机 type=”tel”</li>
+<li>邮箱 type=”email”</li>
+<li>搜索框  type=”search”<br>对比之前css表订单类型，这个会更加的完善，提高用户体验度。<br>新表单事件</li>
+</ul>
+</li>
+<li>input<ul>
+<li>输入的时候会一直触发</li>
+</ul>
+</li>
+<li>change<ul>
+<li>值改变时候会触发 </li>
+<li>range滑块停止滑动时候</li>
+</ul>
+</li>
+<li>invalid<ul>
+<li>验证失败时候会触发<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"#"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"tel"</span> <span class="attr">placeholder</span>=<span class="string">"请输入手机"</span> <span class="attr">required</span>  <span class="attr">id</span>=<span class="string">"one"</span> <span class="attr">pattern</span>=<span class="string">"\d&#123;4&#125;"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"email"</span> <span class="attr">placeholder</span>=<span class="string">"请输入邮箱"</span> <span class="attr">required</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"请输入用户名"</span> <span class="attr">required</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line">    document.getElementById("one").oninvalid= function () &#123;</div><div class="line">        this.setCustomValidity("不能为空哦```")</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>  当表单验证失败时候，会显示设置的这个内容。</p>
+<p>新表单元素<br> output<br>  跟span差不多，只是语义更强一些。</p>
+<p>新表单属性<br> placeholder  占位符<br> autofocus  自动获取焦点<br> multiple<br>是给type=“file”  一次性可以选择多个文件使用的表单属性</p>
+<p>表单验证<br>自带有验证规则的<br>tyep=”email”  具有自带验证是否有@  .等格式的，但是不能验证是否为空<br>非空验证<br>   required    直接在标签里加上就可以检验这个input为空的时候，会提示。<br>自定义验证规则<br>   pattern=”\d{4}”    通过这样格式来验证是否符合规范<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">form&#123;</div><div class="line">  width: 500px;</div><div class="line">  margin:0 auto;</div><div class="line">  border: 1px solid #000;</div><div class="line">&#125;</div><div class="line">input&#123;</div><div class="line">  width: 100%;</div><div class="line">&#125;</div><div class="line">&lt;form action=&quot;#&quot;&gt;</div><div class="line">  &lt;!-- 新type属性 在移动端 兼容性 很好 --&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入名字:&lt;input type=&quot;text&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;!-- 早期 是可以使用 对应的 jq或者js插件来实现 --&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入颜色:&lt;input type=&quot;color&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入生日:&lt;input type=&quot;date&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;!-- 部分 新type属性 在桌面端 没有明显差异</div><div class="line">        移动端 会弹出 不同的 虚拟键盘</div><div class="line">            email @  email键盘</div><div class="line">            search 虚拟键盘的左下建 是 搜索 或者是 放大镜</div><div class="line">        手机测试</div><div class="line">          最low 手机连接电脑 -&gt;拷贝</div><div class="line">          手机登陆qq 电脑登陆qq 发送到我的移动设备</div><div class="line">          实际工作的时候 会上传到 服务器中 进行测试</div><div class="line">              如何测试 不同品牌的手机呢?</div><div class="line">              公司中 会租手机 </div><div class="line">   --&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入邮箱:&lt;input type=&quot;email&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入搜索内容:&lt;input type=&quot;search&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;!-- 输入 数字 字母无法输入 e 科学计数法 --&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入年龄:&lt;input type=&quot;number&quot;&gt;&lt;/label&gt;</div><div class="line">  &lt;!-- 移动端 弹出的是 九宫格数字键盘 --&gt;</div><div class="line">  &lt;label for=&quot;&quot;&gt;请输入手机号:&lt;input type=&quot;tel&quot;&gt;&lt;/label&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure></p>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()" title="关闭">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/04/27/h5-3/">h5-3</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Miss Lai 的个人博客">Miss Lai</a></p>
+        <p><span>发布时间:</span>2017年04月27日 - 21时09分</p>
+        <p><span>最后更新:</span>2017年04月27日 - 19时26分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/27/h5-3/" title="h5-3">http://yoursite.com/2017/04/27/h5-3/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/04/27/h5-3/　　作者: Miss Lai" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/04/26/h5-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          h5-2
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/27/h5-4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">h5-4</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#h5-表单"><span class="toc-number">1.</span> <span class="toc-text">h5-表单</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2017/04/27/h5-3/" data-title="h5-3" data-url="http://yoursite.com/2017/04/27/h5-3/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/04/26/h5-2/" title="上一篇: h5-2">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/04/27/h5-4/" title="下一篇: h5-4">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/C3-3/">C3-3</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/29/C3-2/">C3-2</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/h5-6/">h5-6</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/28/h5-5/">h5-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/27/h5-4/">h5-4</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/27/h5-3/">h5-3</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/h5-2/">h5-2</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/26/h5-1/">H5-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/C3-1/">C3-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/html/">HTMl</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/Begin/">Begin</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 Miss Lai
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 2;
+            var backgroundimg = "url(/background/bg-" + backgroundnum +".jpg)";
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
